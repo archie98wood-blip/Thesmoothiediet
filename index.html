@@ -1,182 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Smoothie Reset Method</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Smoothie Reset Method</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+* { box-sizing: border-box; }
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: radial-gradient(circle at top, #1c1c1c, #0b0b0b);
-      color: #ffffff;
-    }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle at top, #1e1e1e, #0a0a0a);
+  color: #fff;
+}
 
-    .wrapper {
-      max-width: 1200px;
-      margin: auto;
-      padding: 70px 20px;
-    }
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 70px 20px;
+}
 
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
-    }
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
 
-    @media (max-width: 900px) {
-      .hero {
-        grid-template-columns: 1fr;
-      }
-    }
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+}
 
-    h1 {
-      font-size: 48px;
-      line-height: 1.1;
-      margin-bottom: 20px;
-    }
+h1 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
 
-    h1 span {
-      color: #ff9f1c;
-    }
+h1 span {
+  color: #ff9f1c;
+}
 
-    h2 {
-      font-size: 22px;
-      font-weight: normal;
-      color: #e0e0e0;
-      margin-bottom: 30px;
-    }
+h2 {
+  font-size: 22px;
+  font-weight: normal;
+  color: #ddd;
+  margin-bottom: 30px;
+}
 
-    .benefits {
-      margin: 30px 0;
-    }
+.benefits {
+  list-style: none;
+  padding: 0;
+  margin: 30px 0;
+}
 
-    .benefits li {
-      list-style: none;
-      margin-bottom: 14px;
-      font-size: 18px;
-    }
+.benefits li {
+  font-size: 18px;
+  margin-bottom: 14px;
+}
 
-    .benefits li::before {
-      content: "✓ ";
-      color: #ff9f1c;
-      font-weight: bold;
-    }
+.benefits li::before {
+  content: "✓ ";
+  color: #ff9f1c;
+  font-weight: bold;
+}
 
-    .cta {
-      display: inline-block;
-      margin-top: 25px;
-      padding: 18px 36px;
-      background: linear-gradient(135deg, #ff9f1c, #ff6a00);
-      color: #000;
-      font-size: 20px;
-      font-weight: bold;
-      border-radius: 50px;
-      text-decoration: none;
-      box-shadow: 0 10px 30px rgba(255,159,28,0.4);
-    }
+.cta {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 18px 36px;
+  background: linear-gradient(135deg, #ff9f1c, #ff6a00);
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 12px 30px rgba(255,159,28,0.45);
+}
 
-    .cta:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 14px 40px rgba(255,159,28,0.6);
-    }
+.cta:hover {
+  transform: translateY(-1px);
+}
 
-    .trust {
-      margin-top: 18px;
-      font-size: 14px;
-      color: #aaa;
-    }
+.trust {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #aaa;
+}
 
-    .images {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
 
-    .images img {
-      width: 100%;
-      height: 260px;
-      object-fit: cover;
-      border-radius: 18px;
-      box-shadow: 0 10px 35px rgba(0,0,0,0.5);
-    }
+.images img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.6);
+}
 
-    .divider {
-      margin: 80px 0 40px;
-      text-align: center;
-      font-size: 18px;
-      color: #ccc;
-    }
-
-    .highlight {
-      color: #ff9f1c;
-      font-weight: bold;
-    }
-  </style>
+.divider {
+  margin: 80px 0 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #ccc;
+}
+.highlight {
+  color: #ff9f1c;
+  font-weight: bold;
+}
+</style>
 </head>
 
 <body>
 
-  <div class="wrapper">
+<div class="wrapper">
+  <div class="hero">
 
-    <div class="hero">
+    <!-- LEFT TEXT -->
+    <div>
+      <h1>
+        The <span>Smoothie Reset</span> Helping People Burn Fat<br>
+        Without Starving or Extreme Diets
+      </h1>
 
-      <!-- LEFT SIDE: FIT MEN & WOMEN -->
-      <div>
-        <h1>
-          The <span>Smoothie Reset</span> That’s Helping People
-          Burn Fat Without Starving
-        </h1>
+      <h2>
+        A simple daily smoothie routine designed to support fat loss,
+        energy, and confidence — without complicated rules.
+      </h2>
 
-        <h2>
-          A simple daily smoothie routine designed to support fat loss,
-          energy, and confidence — without extreme dieting or workouts.
-        </h2>
+      <ul class="benefits">
+        <li>No calorie counting or food obsession</li>
+        <li>Designed for busy, real-life schedules</li>
+        <li>Helps reduce cravings and bloating</li>
+        <li>Used by <span class="highlight">hundreds of thousands</span> worldwide</li>
+      </ul>
 
-        <ul class="benefits">
-          <li>No calorie counting or food obsession</li>
-          <li>Designed for busy, real-life schedules</li>
-          <li>Helps reduce cravings and bloating</li>
-          <li>Used by <span class="highlight">hundreds of thousands</span> worldwide</li>
-        </ul>
+      <!-- GOOGLE FORM -->
+      <a class="cta" href="https://forms.gle/Zv5VWUyReAKRnELX6">
+        Unlock Free Access
+      </a>
 
-        <!-- 🔴 GOOGLE FORM LINK (DO NOT CHANGE ANYTHING ELSE) -->
-        <a class="cta" href="https://forms.gle/Zv5VWUyReAKRnELX6">
-          Unlock Free Access
-        </a>
-
-        <div class="trust">
-          🔒 Privacy protected · No spam · Cancel anytime
-        </div>
+      <div class="trust">
+        🔒 Privacy protected · No spam · Cancel anytime
       </div>
-
-      <div class="images">
-        <!-- Fit People -->
-        <img src="https://images.unsplash.com/photo-1594737625785-cf9dba1c94a9?auto=format&fit=crop&w=800&q=80" alt="Fit Woman">
-        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?auto=format&fit=crop&w=800&q=80" alt="Fit Man">
-
-        <!-- Smoothies & Fruit -->
-        <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=800&q=80" alt="Smoothie Bowl">
-        <img src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?auto=format&fit=crop&w=800&q=80" alt="Fresh Fruit">
-      </div>
-
     </div>
 
-    <div class="divider">
-      Most people fail because they overcomplicate weight loss.<br>
-      <span class="highlight">This keeps it simple.</span>
+    <!-- RIGHT IMAGES (EMBEDDED) -->
+    <div class="images">
+
+      <!-- SHREDDED WOMAN -->
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...(truncated for display)..."/>
+
+      <!-- FIT MAN -->
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...(truncated for display)..."/>
+
+      <!-- SMOOTHIE -->
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...(truncated for display)..."/>
+
+      <!-- FRUIT -->
+      <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD...(truncated for display)..."/>
+
     </div>
 
   </div>
 
+  <div class="divider">
+    Most people fail because they overcomplicate weight loss.<br>
+    <span class="highlight">This keeps it simple.</span>
+  </div>
+</div>
+
 </body>
 </html>
+
+
 
 
 
