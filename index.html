@@ -1,153 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simple Smoothie Wellness Plan</title>
+  <meta charset="UTF-8">
+  <title>The Smoothie Routine People Can’t Stop Sharing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7fdf9;
-  color: #333;
-}
-.hero {
-  background: linear-gradient(135deg, #6fcf97, #56ccf2);
-  color: white;
-  text-align: center;
-  padding: 70px 20px;
-}
-.hero h1 {
-  font-size: 2.3em;
-}
-.hero p {
-  font-size: 1.15em;
-  max-width: 720px;
-  margin: auto;
-}
-.container {
-  max-width: 900px;
-  margin: auto;
-  padding: 40px 20px;
-}
-.box {
-  background: white;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  margin-bottom: 20px;
-}
-.cta {
-  text-align: center;
-}
-input[type="email"] {
-  width: 100%;
-  max-width: 360px;
-  padding: 15px;
-  font-size: 1em;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-button {
-  background: #ff8a00;
-  color: white;
-  border: none;
-  padding: 15px 35px;
-  font-size: 1.1em;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 15px;
-}
-button:hover {
-  background: #e67e00;
-}
-#thankyou {
-  display: none;
-}
-footer {
-  text-align: center;
-  font-size: 0.85em;
-  padding: 20px;
-  color: #666;
-}
-</style>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+      line-height: 1.5;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1543362906-acfc16c67564') no-repeat center center;
+      background-size: cover;
+      padding: 80px 20px;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.65);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 420px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 30px;
+      margin-bottom: 14px;
+    }
+
+    .sub {
+      font-size: 16px;
+      color: #dddddd;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      background: #00ff9d;
+      color: #000;
+      padding: 16px;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 20px 0 10px;
+    }
+
+    .trust {
+      font-size: 13px;
+      color: #cccccc;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .image-block img {
+      width: 100%;
+      border-radius: 14px;
+      margin: 20px 0;
+    }
+
+    .box {
+      background: #161616;
+      padding: 20px;
+      border-radius: 14px;
+      margin-top: 20px;
+    }
+
+    .faq p {
+      font-size: 14px;
+      color: #dddddd;
+      margin-bottom: 16px;
+    }
+
+    footer {
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #aaaaaa;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-  <h1>A Simple Daily Smoothie Plan for a Healthier Lifestyle</h1>
-  <p>An easy, realistic way to support your nutrition using simple smoothies that fit busy routines.</p>
-</section>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1>I Didn’t Change My Diet — I Just Added This Smoothie</h1>
+      <p class="sub">
+        A simple 21-day smoothie routine people are using to feel lighter,
+        healthier, and more confident — without extremes.
+      </p>
 
-<!-- CONTENT -->
-<section class="container">
+      <a class="btn" href="PASTE_GOOGLE_FORM_LINK_HERE">
+        Get Free Access →
+      </a>
 
-  <div class="box">
-    <h3>Why People Love This</h3>
+      <p class="trust">
+        🔒 Free • No spam • You can unsubscribe anytime
+      </p>
+    </div>
+  </div>
+
+  <!-- WHY IT WORKS -->
+  <section>
+    <h2>Why This Is So Easy to Stick To</h2>
     <ul>
-      <li>✔ Simple steps anyone can follow</li>
-      <li>✔ No complicated meal prep</li>
-      <li>✔ Supports healthy daily habits</li>
+      <li>🥤 One smoothie a day — nothing complicated</li>
+      <li>⏱ Ready in under 10 minutes</li>
+      <li>🍓 Uses normal ingredients from the store</li>
+      <li>🧠 Designed to feel sustainable, not extreme</li>
     </ul>
-  </div>
+  </section>
 
-  <!-- EMAIL FORM -->
-  <div class="box cta" id="formBox">
-    <h2>Get the Free Smoothie Starter Guide</h2>
-    <p>Enter your email to see how the plan works.</p>
+  <!-- IMAGE -->
+  <section class="image-block">
+    <img src="https://images.unsplash.com/photo-1505253716362-afaea1a4c3f5" alt="Healthy smoothie ingredients">
+  </section>
 
-    <form id="emailForm"
-      action="YOUR_FORM_ENDPOINT_HERE"
-      method="POST">
+  <!-- WHAT YOU GET -->
+  <section>
+    <h2>What You’ll See Inside</h2>
+    <div class="box">
+      <ul>
+        <li>📘 A simple smoothie routine laid out day by day</li>
+        <li>🛒 Ingredient ideas that are easy to find</li>
+        <li>💡 Tips to make it fit real life</li>
+        <li>📅 A clear starting point (no guessing)</li>
+      </ul>
+    </div>
+  </section>
 
-      <input type="email" name="email" placeholder="Enter your email" required>
-      <br>
-      <button type="submit">Show Me The Plan</button>
-    </form>
+  <!-- IMAGE -->
+  <section class="image-block">
+    <img src="https://images.unsplash.com/photo-1514995669114-6081e934b693" alt="Smoothie preparation">
+  </section>
 
-    <p style="font-size:0.9em;">No spam. Unsubscribe anytime.</p>
-  </div>
+  <!-- SAFETY & TRUST -->
+  <section>
+    <h2>Is This Safe?</h2>
+    <div class="box">
+      <p>
+        This is not a crash diet or extreme program.
+        It’s a smoothie-based routine meant to be flexible and realistic.
+      </p>
+      <p>
+        You’re always in control, and nothing here replaces professional
+        medical advice.
+      </p>
+    </div>
+  </section>
 
-  <!-- THANK YOU MESSAGE -->
-  <div class="box cta" id="thankyou">
-    <h2>✅ Thank You!</h2>
-    <p>Your access is being prepared.</p>
-    <p>Redirecting you now…</p>
-  </div>
+  <!-- CTA -->
+  <section>
+    <a class="btn" href="PASTE_GOOGLE_FORM_LINK_HERE">
+      Continue & Enter Email →
+    </a>
+    <p class="trust">
+      You’ll see a short form next — that’s where access is sent.
+    </p>
+  </section>
 
-</section>
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Quick Questions</h2>
 
-<footer>
-  <p>Affiliate Disclosure: This page contains affiliate links. We may earn a commission at no extra cost to you.</p>
-</footer>
+    <p><strong>Do I need a blender?</strong><br>
+    A basic blender is enough.</p>
 
-<script>
-const form = document.getElementById("emailForm");
-const thankyou = document.getElementById("thankyou");
-const formBox = document.getElementById("formBox");
+    <p><strong>Is this expensive?</strong><br>
+    Most ingredients are everyday foods.</p>
 
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
+    <p><strong>What happens after I enter my email?</strong><br>
+    You’ll be guided to the next step with full details.</p>
+  </section>
 
-  fetch(form.action, {
-    method: "POST",
-    body: new FormData(form),
-    headers: {
-      'Accept': 'application/json'
-    }
-  }).then(() => {
-    formBox.style.display = "none";
-    thankyou.style.display = "block";
-
-    setTimeout(() => {
-      window.location.href = "https://8726c-5dw7at3o0fpluhm5r617.hop.clickbank.net";
-    }, 2500);
-  });
-});
-</script>
+  <footer>
+    This site is for informational purposes only.  
+    Results vary from person to person.
+  </footer>
 
 </body>
 </html>
